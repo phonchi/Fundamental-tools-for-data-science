@@ -1,0 +1,54 @@
+{
+  // --- 模型與生成相關設定 (Model & Generation Settings) ---
+  "model": "gemini-2.5-pro",          // 指定預設使用的模型，gemini-2.5-pro 是目前的推薦選項
+  "temperature": 0.7,                 // 控制輸出的創意程度，0 表示最確定，1 表示最有創意
+  "topP": 0.95,                       // 一種抽樣策略，與 temperature 二擇一使用，保留機率總和為 95% 的詞彙
+  "topK": 40,                         // 一種抽樣策略，從機率最高的 40 個詞彙中進行選擇
+  "candidateCount": 1,                // 每次請求生成的回應數量，通常設為 1
+
+  // --- 工具與執行相關設定 (Tool & Execution Settings) ---
+  "autoAccept": "read-only",          // 自動接受工具執行的策略。'read-only' 表示自動同意不會修改檔案的工具 (如 ls, cat)
+  "toolConfig": {
+    "disabled": ["GoogleSearch"]      // 禁用特定的內建工具，例如，如果你不希望 AI 自行上網搜尋
+  },
+
+  // --- MCP 伺服器設定 (MCP Server Settings) ---
+  "mcpServers": {
+    // 本地伺服器：天氣工具 (由 Gemini CLI 自動啟動)
+    "weather_tool": {
+      "command": ["python", "-u", "weather_server.py"],
+      "workingDirectory": ".",        // 指定腳本的執行目錄
+      "description": "提供即時天氣資訊的工具"
+    },
+    // 遠端伺服器：待辦事項工具 (需要您手動啟動)
+    "todo_remote": {
+      "transport": "http",            // 連線方式為 HTTP
+      "url": "http://localhost:8080/mcp", // 遠端伺服器的網址
+      "description": "從 JSONPlaceholder 獲取待辦事項的遠端工具"
+    }
+  },
+
+  // --- 安全性與內容過濾設定 (Safety & Content Filtering) ---
+  "safetySettings": {
+    "HARM_CATEGORY_HARASSMENT": "BLOCK_ONLY_HIGH",
+    "HARM_CATEGORY_HATE_SPEECH": "BLOCK_ONLY_HIGH",
+    "HARM_CATEGORY_SEXUALLY_EXPLICIT": "BLOCK_ONLY_HIGH",
+    "HARM_CATEGORY_DANGEROUS_CONTENT": "BLOCK_ONLY_HIGH"
+  },
+
+  // --- 檔案與專案管理設定 (File & Project Management) ---
+  "fileFiltering": {
+    "respectGitIgnore": true          // 是否遵循 .gitignore 檔案的規則，避免 AI 讀取到不該讀的檔案
+  },
+  "checkpointing": {
+    "enabled": true                   // 是否啟用檢查點功能，以便在 AI 修改檔案後，能使用 /restore 指令還原
+  },
+
+  // --- 介面與顯示設定 (UI & Display Settings) ---
+  "theme": "dark",                      // 介面主題，可以是 'dark', 'light', 或 'auto'
+  "showLoading": true,                  // 是否顯示載入中的動畫
+
+  // --- 記錄與統計設定 (Logging & Statistics) ---
+  "logLevel": "info",                   // 記錄檔的詳細程度，可以是 'debug', 'info', 'warn', 'error'
+  "usageStatisticsEnabled": true        // 是否允許傳送匿名的使用統計數據以協助改善工具
+}
