@@ -1,0 +1,9 @@
+date,product_id,category,sales,region
+2023-10-01,101,Electronics,1200,North
+2023-10-01,102,Clothing,300,North
+2023-10-02,103,Electronics,1500,South
+2023-10-02,101,Electronics,1150,West
+2023-10-03,104,Books,150,East
+2023-10-03,,Clothing,250,South
+2023-10-04,102,Clothing,320,North
+2023-10-04,105,Books,180,West
