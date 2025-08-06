@@ -58,7 +58,7 @@ CLI (Command-Line Interface) 讓你可以在終端機裡，直接與雲端服務
 | :--- | :--- | :--- | :--- |
 | **Gemini CLI (`gemini`)** | Google Gemini 的官方命令列工具 | 在終端機裡與 Gemini 互動，可以讀取本地檔案 (`@file`)、執行系統指令 (`!cmd`)，實現強大的研究流程自動化。 | 建議使用nodejs流程安裝，參考[這裡](https://vocus.cc/article/6863fcb9fd897800014e018d) |
 | **Codex CLI** | | ChatGPT 也提供了 CLI 工具或 API，讓你能將它們的能力整合到終端機中，輔助你的研究。 | 參考 [這裡](https://www.communeify.com/tw/blog/openai-codex-cli-ai-code-terminal/) 安裝。 |
-| **GitHub CLI (`gh`)** | GitHub 的官方命令列工具 | 在終端機裡直接管理你的 Repository、與同學協作，無需頻繁切換到瀏覽器，讓你的研究工作流一氣呵成。 | 參考 [GitHub CLI 官方安裝文件](https://github.com/cli/cli#installation)。 |
+| **GitHub CLI (`gh`)** | GitHub 的官方命令列工具 | 在終端機裡直接管理你的 Repository、與同學協作，無需頻繁切換到瀏覽器，讓你的研究工作流一氣呵成。 | 參考 [GitHub CLI 官方安裝文件](https://docs.github.com/en/copilot/how-tos/use-copilot-for-common-tasks/use-copilot-in-the-cli)。 |
 | **Claude code** | | Claude 也提供了 CLI 工具或 API，讓你能將它們的能力整合到終端機中，輔助你的研究。 | 參考 [Anthropic API 文件](https://docs.anthropic.com/zh-TW/docs/claude-code/setup)安裝。 |
 
 ---
