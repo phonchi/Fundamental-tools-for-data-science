@@ -1,0 +1,26 @@
+# gemini-tools.toml
+# 這個檔案用來向 Gemini CLI 定義可用的本地工具。
+
+# 每個 [[tool.function]] 區塊代表一個可用的工具。
+[[tool.function]]
+# [必要] description: 用自然語言描述這個工具的功能。
+# Gemini 會根據這個描述來判斷何時該使用此工具。
+# 描述得越清晰，Gemini 的判斷就越準確。
+description = "讀取一個本地的 CSV 檔案，對其進行基本的資料分析，並生成一份詳細的 HTML 格式報告。"
+
+# [必要] command: 定義實際要執行的命令列指令。
+# 這是一個陣列，陣列中的每個元素都是指令的一部分。
+# 使用 {參數名稱} 的格式來定義可變的參數。
+command = ["python", "generate_report.py", "{csv_path}"]
+
+# [必要] parameters: 定義這個工具接受哪些參數。
+# 這是一個 JSON Schema 格式的物件。
+[tool.function.parameters]
+type = "object"
+  [tool.function.parameters.properties]
+  # 這裡定義的參數名稱 (例如 "csv_path") 必須與 command 中使用的佔位符一致。
+  [tool.function.parameters.properties.csv_path]
+  type = "string"
+  description = "需要被分析的 CSV 檔案的完整或相對路徑。"
+
+# 如果你有其他工具，可以在下方繼續新增 [[tool.function]] 區塊。
