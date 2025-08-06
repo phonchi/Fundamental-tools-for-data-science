@@ -75,7 +75,7 @@ CLI (Command-Line Interface) 讓你可以在終端機裡，直接與上述雲端
 | **Visual Studio Code (選用)** | 微軟開發的免費、強大的程式碼編輯器。 | 擁有極為豐富的擴充套件生態系，可以完美整合 Python、Git、Jupyter Notebook 等。讓你能在同一個視窗中完成寫程式、版本控制、做筆記等所有事情，是學術界最受歡迎的編輯器之一。 | 前往 [VS Code 官方網站](https://code.visualstudio.com/) 下載。可透過擴充套件安裝 **GitHub Copilot** 等 AI 助理。 |
 | **Cursor (選用)** | 一個內建 AI 功能的 VS Code 分支。 | 它本質上就是 VS Code，但深度整合了 AI 對話、程式碼生成與編輯功能。你可以直接在編輯器中與你的整個專案程式碼庫對話，非常適合用來理解複雜的專案或進行大型重構。 | 前往 [Cursor 官方網站](https://cursor.sh/) 下載並安裝。 |
 | **RStudio (R語言使用者)** | 專為 R 語言打造的整合開發環境 (IDE)。 | 如果你的研究或課程大量使用 R 語言進行統計分析與視覺化，RStudio 提供了無可比擬的整合體驗，包含程式碼、圖表、終端機和變數檢視器。 | 前往 [Posit 官方網站](https://posit.co/download/rstudio-desktop/) 下載。可透過擴充套件整合 [**GitHub Copilot**](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html)。 (需先安裝 R 語言本身)。 |
-| **MATLAB (工程領域使用者)** | 一個高效能的數值計算與視覺化軟體。 | 在工程、信號處理、控制系統等領域是標準工具。其豐富的工具箱 (Toolbox) 和直觀的矩陣運算，讓複雜的數學建模與模擬變得相對簡單。 | 屬商業軟體，但多數大學提供校園授權。[新版 **MATLAB 已內建 AI 功能**](https://www.mathworks.com/products/matlab-copilot.html)，如程式碼建議等。中山大學提供主程式與AI授權請參考[這裡](https://lis.nsysu.edu.tw/p/405-1001-194308,c11666.php?Lang=zh-tw) |
+| **MATLAB (工程領域使用者)** | 一個高效能的數值計算與視覺化軟體。 | 在工程、信號處理、控制系統等領域是標準工具。其豐富的工具箱 (Toolbox) 和直觀的矩陣運算，讓複雜的數學建模與模擬變得相對簡單。 | 屬商業軟體，但多數大學提供校園授權。[新版 **MATLAB 已內建 AI 功能**](https://www.mathworks.com/products/matlab-copilot.html)，如程式碼建議等。中山大學提供主程式與AI授權請參考[這裡](https://lis.nsysu.edu.tw/p/405-1001-194308,c11666.php?Lang=zh-tw)。 |
 | **Jupyter Notebook (本地端)** | 在你自己的電腦上運行的互動式筆記本環境。 | 讓你能在沒有網路連線的情況下進行資料分析，並完全掌控你的運算環境與套件版本。適合處理敏感資料或需要高度客製化環境的研究。 | 最簡單的方式是透過安裝 [Anaconda 發行版](https://www.anaconda.com/download)。可透過安裝 [**Jupyter AI**](https://github.com/jupyterlab/jupyter-ai) 擴充套件來整合各種大型語言模型 (建議可以搭配 [Ollama](https://ollama.com/))。 |
 
 ---
