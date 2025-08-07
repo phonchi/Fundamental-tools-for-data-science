@@ -83,3 +83,52 @@ CLI (Command-Line Interface) 讓你可以在終端機裡，直接與上述雲端
 ## 6. 參考資源
 
 * **LLM 相關指令教學**：可參考此 HackMD 文件來學習更多與大型語言模型互動的技巧：[https://hackmd.io/@phonchi/LLM_Basic](https://hackmd.io/@phonchi/LLM_Basic)
+
+## 7. LLM功能比較矩陣
+
+
+### 1. 核心模型與推理
+| 功能 | OpenAI ChatGPT | Google Gemini | Anthropic Claude | Microsoft Copilot |
+| :-- | :-- | :-- | :-- | :-- |
+| **基礎模型引擎** | GPT-4o、`o` 系列 (o3, o4-mini) [[原文]](https://openai.com/index/hello-gpt-4o/) | Gemini 2.5 系列 (Pro, Flash) [[原文]](https://blog.google/products/gemini/google-gemini-2-5-pro-flash/) | Claude 4.1、3.5 Sonnet [[原文]](https://www.anthropic.com/news/claude-3-5-sonnet) | 基於 GPT-4o [[原文]](https://blogs.microsoft.com/blog/2024/05/20/microsoft-build-2024-news/) |
+| **最大上下文視窗** | 128 k (GPT-4o) [[原文]](https://openai.com/api/pricing/) | 100 萬 (可擴 200 萬)  | 20 萬  | 128 k [[原文]](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/) |
+| **高階推理模式** | `o` 系列複雜任務模式  | **Deep Think** [[原文]](https://blog.google/products/gemini/gemini-drop-july-2025/) | **擴展思維** [[原文]](https://www.anthropic.com/news/expanded-thought-process-for-claude) | — |
+| **API 成本 / 層級** | o3、o4-mini 等多層級 [[原文]](https://openai.com/api/pricing/) | Pro、Flash、Flash-Lite 等 [[原文]](https://ai.google.dev/pricing) | Opus、Sonnet、Haiku 等 [[原文]](https://www.anthropic.com/pricing) | 透過 Azure OpenAI [[原文]](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/) |
+
+
+### 2. 互動式工作空間
+| 功能 | OpenAI ChatGPT | Google Gemini | Anthropic Claude | Microsoft Copilot |
+| :-- | :-- | :-- | :-- | :-- |
+| **官方名稱** | **Canvas**（創作）<br/>**Projects**（組織） [[原文]](https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt) | **Canvas** [[原文]](https://support.google.com/gemini/answer/15074900) | **Artifacts** [[原文]](https://www.anthropic.com/news/claude-3-5-sonnet) | **Pages** [[原文]](https://support.microsoft.com/en-us/office/get-started-with-copilot-pages-in-microsoft-copilot-for-microsoft-365-298f244a-9b59-4c8d-93d3-78b0f79b0687) |
+| **核心哲學** | 即時共同創作 + 長期上下文 | 快速原型與創意沙盒 | 即時 IDE 體驗 | 企業協作文件 |
+| **即時程式碼執行** | 支援 Python、HTML/React [[原文]](https://help.openai.com/en/articles/9930697-what-is-the-canvas-feature-in-chatgpt-and-how-do-i-use-it) | 支援（生成型 App） | 支援 HTML/React | 不支援 |
+| **協作編輯** | 用戶×AI 同步共編 | 支援多用戶資料共享 | 不支援多人同編 | 完整多人共編 [[原文]](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/copilot-pages-now-available-in-microsoft-copilot-for-microsoft/m-p/4126130) |
+| **分享 / 部署** | Canvas 可分享；Projects 私有 | 分享生成 App | 分享互動式 Artifact | 透過 Teams / Outlook 分享 [[原文]](https://support.microsoft.com/en-us/office/share-a-loop-component-7954dd12-8419-47f2-8958-c39e24564c48) |
+
+
+### 3. 檔案與數據處理
+| 功能 | OpenAI ChatGPT | Google Gemini | Anthropic Claude | Microsoft Copilot |
+| :-- | :-- | :-- | :-- | :-- |
+| **檔案上傳來源** | 本機、Google Drive、OneDrive [[原文]](https://help.openai.com/en/articles/10169530-connecting-google-drive-and-onedrive-to-chatgpt) | 本機、Google Drive、GitHub [[原文]](https://support.google.com/gemini/answer/14903178) | 本機（Files API） | 本機、OneDrive、SharePoint [[原文]](https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-overview) |
+| **最大檔案大小** | 512 MB [[原文]](https://help.openai.com/en/articles/9233636-what-are-the-file-size-limits-for-file-uploads-in-chatgpt) | 100 MB；影片 2 GB [[原文]](https://support.google.com/gemini/answer/14903178) | 500 MB [[原文]](https://docs.anthropic.com/en/docs/build-with-claude/files) | 512 MB [[原文]](https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-faq#what-are-the-limitations-of-copilot-) |
+| **持久性儲存** | **Projects** | 無 | **Files API** | 依賴 OneDrive / SharePoint |
+| **資料分析環境** | 內建 Python 沙盒 [[原文]](https://openai.com/blog/data-analysis-improvements) | Python 沙盒 + BigQuery / Sheets | Python 沙盒 & Claude Code [[原文]](https://docs.anthropic.com/en/docs/build-with-claude/code-interpreter) | Excel 中的 Python & Microsoft Fabric [[原文]](https://techcommunity.microsoft.com/t5/excel-blog/announcing-python-in-excel-combining-the-power-of-python-and-the/ba-p/3905488) |
+
+
+### 4. 代理式能力
+| 功能 | OpenAI ChatGPT | Google Gemini | Anthropic Claude | Microsoft Copilot |
+| :-- | :-- | :-- | :-- | :-- |
+| **自主研究功能** | **Deep Research** [[原文]](https://openai.com/blog/deep-research) | **Deep Research** [[原文]](https://blog.google/products/gemini/gemini-drop-july-2025/) | 非品牌化通用能力 | **Deep Research** [[原文]](https://www.microsoft.com/en-us/microsoft-copilot/blog/2025/06/25/release-notes-june-25-2025/) |
+| **自訂代理** | **Custom GPTs** [[原文]](https://openai.com/blog/introducing-gpts) | **Gems** [[原文]](https://blog.google/products/gemini/google-gemini-update-may-2024-gems/), [Jules](https://jules.google/) | API & Claude Code [[原文]](https://milvus.io/blog/claude-code-vs-gemini-cli-which-ones-the-real-dev-co-pilot.md) | **Copilot Studio** [[原文]](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio) |
+| **排程 / 主動動作** | 否（可透過 Actions） | **Scheduled Actions** [[原文]](https://blog.google/products/gemini/gemini-drop-july-2025/) | 否 | 否（可 Power Automate） |
+
+
+### 5. 多模態能力
+| 功能 | OpenAI ChatGPT | Google Gemini | Anthropic Claude | Microsoft Copilot |
+| :-- | :-- | :-- | :-- | :-- |
+| **圖像生成** | GPT-4o / DALL-E 3 | **Imagen 4** [[原文]](https://blog.google/products/gemini/google-imagen-4-generative-ai/) | —（策略性省略） [[原文]](https://www.anthropic.com/safety) | **DALL-E 3** [[原文]](https://create.microsoft.com/en-us/features/ai-image-generator) |
+| **影片生成** | **Sora** | **Veo** [[原文]](https://blog.google/technology/ai/google-veo-io-2024/) | — | — |
+| **音訊生成** | —（語音模式） | 生成式音訊 [[原文]](https://blog.google/technology/ai/google-gemini-generative-audio/) | —（語音模式） | — |
+| **即時視覺輸入** | 行動裝置支援 | **Gemini Live** [[原文]](https://blog.google/products/gemini/google-gemini-live-io-2024/) | — | **Copilot Vision** [[原文]](https://www.microsoft.com/en-us/microsoft-copilot/blog/2025/06/25/release-notes-june-25-2025/) |
+
+
