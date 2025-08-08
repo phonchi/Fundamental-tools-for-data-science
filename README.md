@@ -90,7 +90,7 @@ CLI (Command-Line Interface) 讓你可以在終端機裡，直接與上述雲端
 ### 1. 核心模型與推理
 | 功能 | OpenAI ChatGPT | Google Gemini | Anthropic Claude | Microsoft Copilot |
 | :-- | :-- | :-- | :-- | :-- |
-| **基礎模型引擎** | GPT-4o、`o` 系列 (o3, o4-mini) [[原文]](https://openai.com/zh-Hant/index/introducing-o3-and-o4-mini/) | Gemini 2.5 系列 (Pro, Flash) [[原文]](https://blog.google/products/gemini/google-gemini-2-5-pro-flash/) | Claude 4.1、3.7 Opus/Sonnet [[原文]](https://www.anthropic.com/news/claude-opus-4-1) | 基於 GPT-4o [[原文]](https://blogs.microsoft.com/blog/2024/05/20/microsoft-build-2024-news/) |
+| **基礎模型引擎** | GPT5, GPT-4o、`o` 系列 (o3, o4-mini) [[原文]](https://openai.com/index/introducing-gpt-5/) | Gemini 2.5 系列 (Pro, Flash) [[原文]](https://blog.google/products/gemini/google-gemini-2-5-pro-flash/) | Claude 4.1、3.7 Opus/Sonnet [[原文]](https://www.anthropic.com/news/claude-opus-4-1) | 基於 GPT-4o [[原文]](https://blogs.microsoft.com/blog/2024/05/20/microsoft-build-2024-news/) |
 | **最大上下文視窗** | 128 k (GPT-4o) [[原文]](https://openai.com/api/pricing/) | 100 萬 (可擴 200 萬)  | 20 萬  | 128 k [[原文]](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/) |
 | **高階推理模式** | `o` 系列複雜任務模式  | **Deep Think** [[原文]](https://blog.google/products/gemini/gemini-2-5-deep-think/) | **擴展思維** [[原文]](https://www.anthropic.com/news/visible-extended-thinking) | — |
 | **API 成本 / 層級** | o3、o4-mini 等多層級 [[原文]](https://openai.com/api/pricing/) | Pro、Flash、Flash-Lite 等 [[原文]](https://ai.google.dev/pricing) | Opus、Sonnet、Haiku 等 [[原文]](https://www.anthropic.com/pricing) | 透過 Azure OpenAI [[原文]](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/) |
